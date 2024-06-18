@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-18T09:11:35Z" name="Default suite" finished-at="2024-06-18T09:11:35Z" duration-ms="187">
+    <groups>
+    </groups>
+    <test started-at="2024-06-18T09:11:35Z" name="Default test" finished-at="2024-06-18T09:11:35Z" duration-ms="187">
+      <class name="new_pakage.NewTest">
+        <test-method is-config="true" signature="f()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="f" finished-at="2024-06-18T14:41:35Z" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="b()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="b" finished-at="2024-06-18T14:41:35Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method is-config="true" signature="c()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="c" finished-at="2024-06-18T14:41:35Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c -->
+        <test-method is-config="true" signature="d()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="d" finished-at="2024-06-18T14:41:35Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d -->
+        <test-method signature="a()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="a" finished-at="2024-06-18T14:41:35Z" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method is-config="true" signature="e()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="e" finished-at="2024-06-18T14:41:35Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e -->
+        <test-method is-config="true" signature="d()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="d" finished-at="2024-06-18T14:41:35Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d -->
+        <test-method signature="j()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="j" finished-at="2024-06-18T14:41:35Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- j -->
+        <test-method is-config="true" signature="e()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="e" finished-at="2024-06-18T14:41:35Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e -->
+        <test-method is-config="true" signature="g()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="g" finished-at="2024-06-18T14:41:35Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+        <test-method is-config="true" signature="h()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="h" finished-at="2024-06-18T14:41:35Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h -->
+        <test-method is-config="true" signature="i()[pri:0, instance:new_pakage.NewTest@481ba2cf]" started-at="2024-06-18T14:41:35Z" name="i" finished-at="2024-06-18T14:41:35Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i -->
+      </class> <!-- new_pakage.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
