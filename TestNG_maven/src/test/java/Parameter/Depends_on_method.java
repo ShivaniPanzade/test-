@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class Depends_on_method {
 	
-	@Test (dependsOnMethods = {"openBrowser"})
+	@Test (dependsOnMethods = "openBrowser")
 	public void SignIn() {
 		System.out.println("This will execute second(SignIn)");
 	}
@@ -13,7 +13,7 @@ public class Depends_on_method {
 		System.out.println("This will execute first(open Browser)");
 	}
 	
-	@Test(dependsOnMethods = {"SignIn"})
+	@Test(dependsOnMethods = "SignIn")
 	public void LogOut() {
 		System.out.println("The user logged out successfully");
 	}
