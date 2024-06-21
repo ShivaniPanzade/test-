@@ -17,27 +17,29 @@ public class netmade extends Base_class {
 	@BeforeSuite
 	public void launch_browser() throws Throwable  {
 		open_Browser("chrome");
-		screenshot("launched_browser");
+		
 	}
 
 	@BeforeTest
 	public void send_url() throws Throwable {
 		sendurl("https://www.netmeds.com/");
-		screenshot("sendurl");
+		
 	}
 
 	@Test(priority = 1)
 	public void deliver_to() throws Throwable {
 		WebElement deliver_to = driver.findElement(By.xpath("//span[@id=\"delivery_details\"]"));
 		deliver_to.click();
-		System.out.println(deliver_to.getText());
-		screenshot("click_deliverto");
+		System.out.println("Exsisting pincode is : " + deliver_to.getText());
+	        Thread.sleep(3000);
+
+		
 
 		WebElement pincode = driver.findElement(By.xpath("//input[@id=\"rel_pincode\"]"));
 		pincode.sendKeys("444705");
 		System.out.println("Entered pincode is : " + pincode.getAttribute("value"));
 		Thread.sleep(2000);
-		screenshot("pincode");
+		
 	}
 
 	@Test(priority = 2)
@@ -46,35 +48,34 @@ public class netmade extends Base_class {
 		search.sendKeys("chestoncold");
 		Thread.sleep(2000);
 		System.out.println("Entered text is : " + search.getAttribute("value"));
-		screenshot("searchbox");
+		
 
 		Actions act = new Actions(driver);
 		act.keyDown(Keys.ENTER).build().perform();
 	}
 
 	@Test(priority = 3)
-	public void scroll() throws Throwable {
+	public void scroll()  {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,100)");
 		System.out.println(driver.getTitle());
-		screenshot("search_result");
-
+		
 	}
 
 	@Test(priority = 4)
 	public void click_cart() throws Throwable {
 		driver.findElement(By.xpath("(//button[@title=\"ADD TO CART\"])[1]")).click();
 		Thread.sleep(2000);
-		screenshot("add_to_cart");
+		
 	}
 
 	@Test(priority = 5)
-	public void cart() throws Throwable {
+	public void cart()  {
 		WebElement cart = driver.findElement(By.xpath("//div[@class=\"text\"]"));
 
 		Actions act = new Actions(driver);
 		act.moveToElement(cart).click().build().perform();
-		screenshot("proceed_add_to_cart");
+		
 
 	}
 
@@ -85,16 +86,14 @@ public class netmade extends Base_class {
 		select.selectByVisibleText("5");
 		System.out.println("Selected quantity is : " + quantity.getAttribute("value"));
 		Thread.sleep(2000);
-		screenshot("selected_quantity");
 	}
 
 	@Test(priority = 7)
-	public void scroll2() throws Throwable {
+	public void scroll2()  {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,250)");
 		System.out.println(driver.getTitle());
-		screenshot("scroll");
-
+		
 	}
 	@Test(priority = 8)
 	public void proceed() {
@@ -103,16 +102,11 @@ public class netmade extends Base_class {
 	@Test(priority=9)
 	public void mob_no() {
 		driver.findElement(By.xpath("//input[@id=\"loginfirst_mobileno\"]")).sendKeys("9763417653");
-		driver.findElement(By.xpath("//button[text()=\"USE OTP\"]")).click();
-	}
-	@Test(priority = 10)
-	public void create_ac() throws Throwable {
-		driver.findElement(By.xpath("//input[@id=\"reg_email\"]")).sendKeys("shivanipanzade@gmail.com");
-		driver.findElement(By.xpath("//input[@id=\"reg_firstname\"]")).sendKeys("shivani");
-		driver.findElement(By.xpath("//input[@id=\"reg_lastname\"]")).sendKeys("panzade");
-		Thread.sleep(2000);
+	}	
+	        @AfterSuite
+		public void close() {
+	         driver.close();
 		
-		//driver.findElement(By.xpath("(//button[@type=\"submit\"])[5]")).click();
-		driver.close();
+		
 		}
 }
